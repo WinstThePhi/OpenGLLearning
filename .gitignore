@@ -1,20 +1,20 @@
 #objects and resulting executables
-.exe
-.o
+*.exe
+*.o
 
 #test images
-.jpg
-.png
+*.jpg
+*.png
 
 #editor files
-.4coder
-.json
-.vscode
+*.4coder
+*.json
+*.vscode
 
 #precompiled headers
-.gch
+*.gch
 
 #lib docs
-.html
-.css
-.svg
+*.html
+*.css
+*.svg
