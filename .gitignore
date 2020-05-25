@@ -1,0 +1,25 @@
+#objects and resulting executables
+*.exe
+*.o
+
+#test images
+*.jpg
+*.png
+
+#editor files
+*.4coder
+*.json
+*.vscode
+
+#precompiled headers
+*.gch
+
+#lib docs
+*.html
+*.css
+*.svg
+*.js
+*.md
+
+#idk what the flip this is
+.suo
