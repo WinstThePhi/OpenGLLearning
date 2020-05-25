@@ -8,7 +8,7 @@
 #include "window.h"
 
 GLFWwindow *window;
-const unsigned int WIDTH = 1000, HEIGHT = 750;
+const unsigned int WIDTH = 1200, HEIGHT = 900;
 
 vec4 clearColor{0.2f, 0.3f, 0.3f, 1.0f};
 
@@ -56,11 +56,12 @@ void RenderLoop(){
     vec2 size1{0.05f, 0.4f};
     vec2 pos2{0.85f, 0.2f};
     vec2 size2{0.05f, 0.4f};*/
-    SetupTriangle();
+    SetupTextures();
+    SetupRectangle();
     while(!glfwWindowShouldClose(window)){
         ProcessInput(window);
         ClearScreen(clearColor);
-        DrawTriangle();
+        DrawRectangle();
         glfwSwapInterval(1);
         glfwSwapBuffers(window);
         glfwPollEvents();
@@ -69,5 +70,5 @@ void RenderLoop(){
 
 void Terminate(){
     glfwTerminate();
-    shader->~Shaders();
+    delete shader;
 }

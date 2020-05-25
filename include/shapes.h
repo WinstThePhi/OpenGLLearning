@@ -7,7 +7,7 @@
 };*/
 #include "shaders.h"
 
-extern Shaders *shader;
+extern Shaders* shader;
 
 void CreateShaderProgram();
 
@@ -21,7 +21,9 @@ void UpdateRectangle(vec2, vec2, vec2, vec2);
 
 void DrawRectangle();
 
-void SetupRectangle(vec2, vec2, vec2, vec2);
+void SetupRectangle();
+
+void SetupTextures();
 
 //void SetupShape(SHAPES shape);
 

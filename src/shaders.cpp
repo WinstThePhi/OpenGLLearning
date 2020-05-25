@@ -92,5 +92,6 @@ void Shaders::SetFloat(const std::string &name, float value) const{
 }
 
 Shaders::~Shaders(){
-    delete this;
+    
 }
+
